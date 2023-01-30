@@ -2,7 +2,9 @@ package com.mycompany.peluqueriacanina.igu;
 
 import javax.swing.*;
 
-public class CargaDatos {
+
+public class CargaDatos extends javax.swing.JFrame {
+
     private JTextField txtNombre;
     private JTextArea textArea1;
     private JComboBox cmbAlergico;
@@ -15,4 +17,17 @@ public class CargaDatos {
     private JLabel txtObservaciones;
     private JButton btnGuardar;
     private JTextField txtCelDueño;
+
+
+    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt){
+        txtNombre.setText("");
+        txtRaza.setText("");
+        txtColor.setText("");
+        txtObservaciones.setText("");
+        txtNomDueño.setText("");
+        txtCelDueño.setText("");
+        cmbAlergico.setSelectedIndex(0);
+        cmbAtEsp.setSelectedIndex(0);
+    }
+
 }
