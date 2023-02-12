@@ -1,6 +1,9 @@
 package com.mycompany.peluqueriacanina.logica;
-
+//@Entity
 public class Mascota {
+
+    //@Id
+    //@GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int num_cliente;
     private String nombre;
     private String raza;
@@ -10,8 +13,9 @@ public class Mascota {
     private String observaciones;
 
 
-
+    //@OneToOne
     private Duenio unDuenio;
+
 
     public Mascota() {
     }

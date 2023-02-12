@@ -1,6 +1,11 @@
 package com.mycompany.peluqueriacanina.logica;
 
+import javax.annotation.processing.Generated;
+
+//@Entity
 public class Duenio {
+    //@Id
+    //@GeneratedValue(strategy=GenerationType.SEQUENCE)
     private int id_duenio;
     private String nombre;
     private String celDuenio;
